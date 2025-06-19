@@ -1,0 +1,21 @@
+{
+  "name": "test-chokidar",
+  "module": "index.ts",
+  "type": "module",
+   "scripts": {
+    "dev": "dotenv -e .env.local bun --watch run src/watch/index.ts"
+   },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "dotenv-cli": "^7.4.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.3",
+    "express": "^4.21.1",
+    "@t3-oss/env-nextjs": "^0.10.1",
+    "zod": "^3.23.8"
+  }
+}
