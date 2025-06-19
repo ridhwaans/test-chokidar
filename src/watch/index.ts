@@ -38,6 +38,8 @@ const fileWatcher = () => {
     {
       ignored: /(^|[\/\\])\../, // ignore dotfiles
       persistent: true,
+      usePolling: true,
+      interval: 1000
     },
   );
 
